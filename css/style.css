@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+#menuGora{
+    width: 100%;
+    background-color: silver;
+    overflow: auto;
+
+}
+#menuGora a{
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0px;
+    transition: all 0.6s ease;
+    font-size: 36px;
+    text-decoration: none;
+    color: coral;
+
+
+
+}
+#menuGora a:hover{
+    background-color: lightgray;
+    color: lightcoral;
+
+}
+#menuGora a:nth-child(1), #menuGora a:nth-child(5){
+    background-color: coral;
+    color: white;
+}
+#menuGora a:nth-child(1):hover, #menuGora a:nth-child(5):hover{
+    background-color: lightcoral;
+    color: lightgray;
+}

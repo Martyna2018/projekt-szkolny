@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>StaryPC</title>
+    <script src="js/script.js"></script>
+    <style>
+        body{
+            margin: 0;
+        }
+        #menuGora{
+            width: 100%;
+            background-color: silver;
+            overflow: auto;
+            font-family: "Baloo 2";
+
+
+        }
+        #menuGora a{
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 12px 0px;
+            transition: all 0.6s ease;
+            font-size: 36px;
+            text-decoration: none;
+            color: coral;
+
+
+
+        }
+        #menuGora a:hover{
+            background-color: lightgray;
+            color: lightcoral;
+
+        }
+       #menuGora a:nth-child(1), #menuGora a:nth-child(5){
+           background-color: coral;
+           color: white;
+       }
+        #menuGora a:nth-child(1):hover, #menuGora a:nth-child(5):hover{
+            background-color: lightcoral;
+            color: lightgray;
+        }
+        .zegarek{
+            color: coral;
+            font-family: "Baloo 2 SemiBold";
+            background-color: rgba(0,0,0,0.1);
+            width: 100%;
+            padding: 10px 0px;
+            align-items: center;
+            text-align: center;
+
+
+        }
+
+    </style>
+</head>
+<body onload="zmianaCzasu()">
+<div id="menuGora">
+    <a href="#">Nowości</a>
+    <a href="#">Aktualności</a>
+    <a href="#">Kontakt</a>
+    <a href="#">O nas</a>
+    <a href="#">Wyprzedaż</a>
+</div>
+<div class="zegarek">
+<div id="zegar"></div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
